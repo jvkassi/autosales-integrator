@@ -6,9 +6,9 @@
     <xsl:template match="/cars">
         <cars>
             <xsl:for-each select="car">
-              <xsl:if test="make = $MAKE ">
-                <xsl:if test="model = $MODEL ">
-                  <xsl:if test="version = $VERSION ">
+              <xsl:if test="make = $MAKE or $MAKE = '' ">
+                <xsl:if test="model = $MODEL or $MODEL = ''">
+                  <xsl:if test="version = $VERSION  or $VERSION = '' ">
                     <car>
                        <make><xsl:value-of select="make"/></make>
                        <model><xsl:value-of select="model"/></model>
