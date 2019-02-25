@@ -7,7 +7,24 @@
                 <property expression="get-property('query.param.model')" name="Model"/>
                 <property expression="get-property('query.param.version')" name="Version"/>
             </log>
-            <sequence key="CarsSequence"/>
+            <filter regex="true" source="get-property('query.param.invaliddata')">
+                <then>
+                    <log level="full">
+                        <property name="RequestType" value="Invalid Request"/>
+                    </log>
+                    <send>
+                        <endpoint>
+                            <http method="get" uri-template="https://larryoke.github.io/autosales-data/carsinvalid.xml"/>
+                        </endpoint>
+                    </send>
+                </then>
+                <else>
+                    <log level="full">
+                        <property name="RequestType" value="Valid Request"/>
+                    </log>
+                    <sequence key="CarsSequence"/>
+                </else>
+            </filter>
         </inSequence>
         <outSequence>
             <log level="full">
@@ -21,7 +38,6 @@
                         <property expression="$ctx:ERROR_MESSAGE" name="error_msg"/>
                     </log>
                     <property name="HTTP_SC" scope="axis2" type="STRING" value="500"/>
-                    <respond/>
                 </on-fail>
             </validate>
             <xslt description="FilterResult" key="gov:/custom/AutosalesFilter.xslt">

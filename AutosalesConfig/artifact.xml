@@ -11,4 +11,10 @@
     <artifact name="CarsSequence" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesConfig.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/CarsSequence.xml</file>
     </artifact>
+    <artifact name="AutosalesInvalidDataEndpoint" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesConfig.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AutosalesInvalidDataEndpoint.xml</file>
+    </artifact>
+    <artifact name="CarsInvalidDataSequence" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesConfig.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CarsInvalidDataSequence.xml</file>
+    </artifact>
 </artifacts>
