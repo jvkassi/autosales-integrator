@@ -6,4 +6,11 @@
             <mediaType>application/xslt+xml</mediaType>
         </item>
     </artifact>
+    <artifact name="Autosales_xsd" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesRegisryResource.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>Autosales.xsd</file>
+            <path>/_system/governance/custom</path>
+            <mediaType>application/x-xsd+xml</mediaType>
+        </item>
+    </artifact>
 </artifacts>
