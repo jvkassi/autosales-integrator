@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/autosales" name="AutosalesAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <log description="QueryParams">
+                <property expression="get-property('query.param.make')" name="Make"/>
+                <property expression="get-property('query.param.model')" name="Model"/>
+                <property expression="get-property('query.param.version')" name="Version"/>
+            </log>
+            <sequence key="CarsSequence"/>
+        </inSequence>
+        <outSequence>
+            <log level="full">
+                <property name="RESPONSE" value="Response"/>
+            </log>
+            <xslt description="FilterResult" key="gov:/custom/AutosalesFilter.xslt">
+                <property expression="get-property('query.param.make')" name="MAKE"/>
+                <property expression="get-property('query.param.model')" name="MODEL"/>
+                <property expression="get-property('query.param.version')" name="VERSION"/>
+            </xslt>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

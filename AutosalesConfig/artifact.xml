@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="AutosalesEndpoint" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesConfig.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AutosalesEndpoint.xml</file>
+    </artifact>
+    <artifact name="AutosalesProxy" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesConfig.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/AutosalesProxy.xml</file>
+    </artifact>
+    <artifact name="AutosalesAPI" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesConfig.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/AutosalesAPI.xml</file>
+    </artifact>
+    <artifact name="CarsSequence" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesConfig.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CarsSequence.xml</file>
+    </artifact>
+</artifacts>
