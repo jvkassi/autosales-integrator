@@ -10,8 +10,9 @@ AutosalesAPI runs at localhost:8280
 
 #### GET method
 This demonstrates the following EIP as mediators
-1. Validator  - uses an XSD to validate the result from endpoint
-2. Transformer - uses an XSLT to filter search results based on the query parameters
+1. Filter - for achieving a "if-else" control structure
+2. Validate  - uses an XSD to validate the result from endpoint
+3. Transformer - uses an XSLT to filter search results based on the query parameters
 
 
 #### POST method
