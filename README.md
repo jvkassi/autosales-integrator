@@ -3,16 +3,17 @@
 ## Design
 
 An API called AutosalesAPI and created using the Enterprise Integrator.
+The relevant config files used in project are also located at https://github.com/larryoke/autosales-data.
 
 ## Implementation
 
-### GET
+#### GET method
 This demonstrates the following EIP as mediators
 1. Validator  - using an XSD
 2. Transformer - using an XSLT
 
 
-### POST
+#### POST method
 1. Validator - using an XSD
 2. Iterate - Slitter EIP
 3. Aggregate - Aggregate EIP
