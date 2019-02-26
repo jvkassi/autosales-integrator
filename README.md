@@ -9,6 +9,10 @@ A very basic and simple autosales API for searching and filtering a list of cars
 AutosalesAPI runs at localhost:8280
 
 #### GET method
+GET /autosales[?make={make}][&model={model}][&version={version}] HTTP/1.1
+Host: localhost:8280
+Accept: application/xml
+
 This demonstrates the following EIP as mediators
 1. Filter - for achieving a "if-else" control structure
 2. Validate  - uses an XSD to validate the result from endpoint
@@ -16,6 +20,10 @@ This demonstrates the following EIP as mediators
 
 
 #### POST method
+POST /autosales/sales/news HTTP/1.1
+Host: localhost:8280
+Accept: application/xml
+
 1. Validator - uses an XSD to validate the search request
 2. Iterate - Slitter EIP to split data or POST request before sending to the endpoint
 3. Aggregate - Aggregate EIP to aggregate individual results coming from endpoint postback
