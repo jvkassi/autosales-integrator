@@ -13,4 +13,11 @@
             <mediaType>application/x-xsd+xml</mediaType>
         </item>
     </artifact>
-    </artifacts>
+    <artifact name="PostNewAutoSales_xsd" groupId="com.larryoke.peoplesource.hmrc.interview.AutosalesRegisryResource.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>PostNewAutoSales.xsd</file>
+            <path>/_system/governance/custom</path>
+            <mediaType>application/x-xsd+xml</mediaType>
+        </item>
+    </artifact>
+</artifacts>
