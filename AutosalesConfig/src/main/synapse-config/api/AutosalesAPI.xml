@@ -64,7 +64,6 @@
                     <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
                 </on-fail>
             </validate>
-            <respond/>
             <iterate attachPath="//cars" expression="//cars/car" preservePayload="true">
                 <target>
                     <sequence>
