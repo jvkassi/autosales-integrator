@@ -49,4 +49,36 @@
         </outSequence>
         <faultSequence/>
     </resource>
+    <resource methods="POST" uri-template="/sales/new">
+        <inSequence>
+            <log level="full">
+                <property name="Action" value="Posting new sale with registration"/>
+            </log>
+            <iterate attachPath="//cars" expression="//cars/car" preservePayload="true">
+                <target>
+                    <sequence>
+                        <send>
+                            <endpoint>
+                                <address uri="http://localhost:8080/new"/>
+                            </endpoint>
+                        </send>
+                    </sequence>
+                </target>
+            </iterate>
+        </inSequence>
+        <outSequence>
+            <property name="res" scope="default">
+                <ResponseDetail xmlns=""/>
+            </property>
+            <aggregate>
+                <completeCondition>
+                    <messageCount max="-1" min="-1"/>
+                </completeCondition>
+                <onComplete enclosingElementProperty="res" expression="//done">
+                    <send/>
+                </onComplete>
+            </aggregate>
+        </outSequence>
+        <faultSequence/>
+    </resource>
 </api>
