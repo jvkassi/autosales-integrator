@@ -24,4 +24,4 @@ This demonstrates the following EIP as mediators
 You can test with SoapUI 5.5.0.
 1. Load the project using the SoapUI project file _REST-Autosales-soapui-project.xml_
 2. Start the MockService in SoapUI
-3. Run test cases
+3. Run positive and negative test cases
