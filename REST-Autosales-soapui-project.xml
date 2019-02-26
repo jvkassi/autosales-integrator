@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e087f437-a6e2-47db-a6ac-8f83bb594fd0" activeEnvironment="Default" name="REST Project 2" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="Autosales TestSuite"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="755c5f74-0b96-4a50-a2a5-291698f8d35d" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8280" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://Babajides-MacBook-Pro:8080/</con:endpoint><con:endpoint>http://localhost:8280</con:endpoint></con:endpoints><con:resource name="Autosales" path="/autosales" id="dc50dc17-02df-4053-bc87-a4f30f928d41"><con:settings/><con:parameters><con:parameter><con:name>make</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>model</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Autosales 1" id="5f0f0db4-d928-4195-8855-e91fc2a74122" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>cars</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Default Request" id="bb1701b1-3439-40fc-96ef-c2af8400236f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value=""/>
+  <con:entry key="make" value=""/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:request><con:request name="All Mercedes Request" id="1ff3051b-b465-4259-a9a0-679144cd10fc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value=""/>
+  <con:entry key="make" value="Mercedes"/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:request><con:request name="All Ford Request" id="1ff3051b-b465-4259-a9a0-679144cd10fc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value=""/>
+  <con:entry key="make" value="Ford"/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:request><con:request name="All Volkswagen Request" id="1ff3051b-b465-4259-a9a0-679144cd10fc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value=""/>
+  <con:entry key="make" value="Volkswagen"/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:request><con:request name="Mercedes C Class Request" id="1ff3051b-b465-4259-a9a0-679144cd10fc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value="C Class"/>
+  <con:entry key="make" value="Mercedes"/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:request><con:request name="Ford Fiesta Request" id="1ff3051b-b465-4259-a9a0-679144cd10fc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value="Fiesta"/>
+  <con:entry key="make" value="Ford"/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:request></con:method><con:method name="Invalid Autosales" id="e38fd401-9864-4315-8326-816a5b8e2e34" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/xml; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element>cars</con:element></con:representation><con:request name="Force invalid Request" id="46affa2b-8ba6-4a32-80dd-902b0e802669" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value=""/>
+  <con:entry key="make" value="true"/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="ad5153aa-68cd-4980-aaae-c2474cab8019" name="Autosales TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8eefd48b-affc-4d05-976e-6614c3834157" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Autosales TestCase" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Autosales 1 - Default Request" id="3eb24bde-7235-4839-9517-87671c8b6cd2"><con:settings/><con:config service="http://localhost:8280" resourcePath="/autosales" methodName="Autosales 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Autosales 1 - Default Request" id="bb1701b1-3439-40fc-96ef-c2af8400236f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:assertion type="XPath Match" id="054bdbdb-bc14-4c05-af16-8b8c8844236e" name="XPath Match"><con:configuration><path>count(/cars/car)</path><content>28</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value=""/>
+  <con:entry key="make" value=""/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Autosales 1 - All Mercedes Request" id="a4d50d4a-f708-4a4a-a5eb-8fb803834f32"><con:settings/><con:config service="http://localhost:8280" resourcePath="/autosales" methodName="Autosales 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Autosales 1 - All Mercedes Request" id="1ff3051b-b465-4259-a9a0-679144cd10fc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request/><con:originalUri>http://localhost/autosales</con:originalUri><con:assertion type="XPath Match" id="ac06ee32-0caf-4e3a-81e7-29200327968a" name="XPath Match"><con:configuration><path>count(/cars/car)</path><content>9</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value=""/>
+  <con:entry key="make" value="Mercedes"/>
+</con:parameters><con:parameterOrder><con:entry>make</con:entry><con:entry>model</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="2e3cad68-b9f4-493d-8a52-201299338a88" port="8080" path="/" host="Babajides-MacBook-Pro"><con:settings/><con:properties/></con:restMockService><con:restMockService id="7417a2e6-6baf-4c52-98e2-805daa3bbfb7" port="8080" path="/" host="Babajides-MacBook-Pro"><con:settings/><con:properties/></con:restMockService><con:restMockService id="20464ae5-c954-4d08-9871-968a30855272" port="8080" path="/" host="Babajides-MacBook-Pro" name="All MockService"><con:settings/><con:properties/><con:restMockAction name="/autosales" method="GET" resourcePath="/autosales" id="9fa206f6-768e-4220-9dc7-fee730258e5c"><con:settings/><con:defaultResponse>Full car list</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Full car list" id="0851d340-93c1-4d99-92ef-3fc1c74ccc3d" httpResponseStatus="200"><con:settings/><con:responseContent><![CDATA[<?xml version="1.0"?>
+<cars>
+    <car>
+        <make>Mercedes</make>
+        <model>C Class</model>
+        <version>1.8</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>C Class</model>
+        <version>2.0</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>C Class</model>
+        <version>2.2</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>E Class</model>
+        <version>2.0</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>E Class</model>
+        <version>2.2</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>E Class</model>
+        <version>2.4</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>S Class</model>
+        <version>2.2</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>S Class</model>
+        <version>2.4</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>S Class</model>
+        <version>2.5</version>
+    </car>
+    <car>
+        <make>Ford</make>
+        <model>Fiesta</model>
+        <version>1.2</version>
+    </car>
+    <car>
+        <make>Ford</make>
+        <model>Fiesta</model>
+        <version>1.6</version>
+    </car>
+    <car>
+        <make>Ford</make>
+        <model>Mondeo</model>
+        <version>2.0</version>
+    </car>
+    <car>
+        <make>Ford</make>
+        <model>Mondeo</model>
+        <version>2.5</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Golf</model>
+        <version>1.4</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Golf</model>
+        <version>1.6</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Golf</model>
+        <version>1.8</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Golf</model>
+        <version>2.0</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Golf</model>
+        <version>2.2</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Passat</model>
+        <version>1.6</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Passat</model>
+        <version>1.8</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Passat</model>
+        <version>2.0</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Passat</model>
+        <version>2.2</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Passat</model>
+        <version>2.4</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Jetta</model>
+        <version>1.6</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Jetta</model>
+        <version>1.8</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Jetta</model>
+        <version>2.0</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Jetta</model>
+        <version>2.2</version>
+    </car>
+    <car>
+        <make>Volkswagen</make>
+        <model>Jetta</model>
+        <version>2.4</version>
+    </car>
+</cars>]]></con:responseContent></con:response></con:restMockAction><con:restMockAction name="/autosales/invalid-data" method="GET" resourcePath="/autosales/invalid-data" id="edf16116-3920-4a84-8708-79b6c75307e1"><con:settings/><con:defaultResponse>Car list with invalid data</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Car list with invalid data" id="e2033de9-ba2f-49e6-87ee-eae177e35d45" httpResponseStatus="200"><con:settings/><con:responseContent><![CDATA[<?xml version="1.0"?>
+<cars>
+    <car>
+        <make>Mercedes</make>
+        <model>C Class</model>
+        <version>one point eight</version>
+    </car>
+    <car>
+        <make>Mercedes</make>
+        <model>C Class</model>
+        <version>2.0</version>
+    </car>
+</cars>]]></con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

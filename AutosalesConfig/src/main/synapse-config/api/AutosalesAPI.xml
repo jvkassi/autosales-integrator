@@ -14,7 +14,7 @@
                     </log>
                     <send>
                         <endpoint>
-                            <http method="get" uri-template="https://larryoke.github.io/autosales-data/carsinvalid.xml"/>
+                            <http method="get" uri-template="http://localhost:8080/autosales/invalid-data"/>
                         </endpoint>
                     </send>
                 </then>
