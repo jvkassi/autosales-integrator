@@ -6,6 +6,7 @@ An API called AutosalesAPI and created using the Enterprise Integrator.
 The relevant config files used in project are also located at https://github.com/larryoke/autosales-data.
 
 ## Implementation
+AutosalesAPI runs at localhost:8280
 
 #### GET method
 This demonstrates the following EIP as mediators
@@ -23,5 +24,5 @@ This demonstrates the following EIP as mediators
 
 You can test with SoapUI 5.5.0.
 1. Load the project using the SoapUI project file _REST-Autosales-soapui-project.xml_
-2. Start the MockService in SoapUI
+2. Start the MockService in SoapUI. The MockService would run at localhost:8080
 3. Run positive and negative test cases
