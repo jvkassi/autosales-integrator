@@ -1,23 +1,23 @@
 # autosales-integrator
 
-## Design
+## Design and Implementation
 
 An API called AutosalesAPI and created using the Enterprise Integrator.
 The relevant config files used in project are also located at https://github.com/larryoke/autosales-data.
+A very basic and simple autosales API for searching and filtering a list of cars.
 
-## Implementation
 AutosalesAPI runs at localhost:8280
 
 #### GET method
 This demonstrates the following EIP as mediators
-1. Validator  - using an XSD
-2. Transformer - using an XSLT
+1. Validator  - uses an XSD to validate the result from endpoint
+2. Transformer - uses an XSLT to filter search results based on the query parameters
 
 
 #### POST method
-1. Validator - using an XSD
-2. Iterate - Slitter EIP
-3. Aggregate - Aggregate EIP
+1. Validator - uses an XSD to validate the search request
+2. Iterate - Slitter EIP to split data or POST request before sending to the endpoint
+3. Aggregate - Aggregate EIP to aggregate individual results coming from endpoint postback
 
 
 ## How to test
