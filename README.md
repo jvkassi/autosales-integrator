@@ -10,6 +10,7 @@ AutosalesAPI runs at localhost:8280
 
 #### GET method
 GET /autosales[?make={make}][&model={model}][&version={version}] HTTP/1.1
+
 Host: localhost:8280
 Accept: application/xml
 
@@ -21,6 +22,7 @@ This demonstrates the following EIP as mediators
 
 #### POST method
 POST /autosales/sales/news HTTP/1.1
+
 Host: localhost:8280
 Accept: application/xml
 
