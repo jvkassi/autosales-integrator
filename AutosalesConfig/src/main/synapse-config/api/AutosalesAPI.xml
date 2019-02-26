@@ -74,7 +74,7 @@
                 <completeCondition>
                     <messageCount max="-1" min="-1"/>
                 </completeCondition>
-                <onComplete enclosingElementProperty="res" expression="//done">
+                <onComplete enclosingElementProperty="res" expression="//added">
                     <send/>
                 </onComplete>
             </aggregate>
