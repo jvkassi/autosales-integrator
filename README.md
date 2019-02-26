@@ -1,6 +1,6 @@
 # autosales-integrator
 
-##Design
+## Design
 
 An API called Autosales and created using the Enterprise Integrator.
 
@@ -8,4 +8,10 @@ An API called Autosales and created using the Enterprise Integrator.
 
 
 
-## Testing
+## How to test
+
+You can test with SoapUI 5.5.0.
+
+1. Load the project using the SoapUI project file REST-Autosales-soapui-project.xml
+2. Start the MockService in SoapUI
+3. Run test cases
