@@ -62,6 +62,7 @@
                         <property expression="$ctx:ERROR_MESSAGE" name="error_msg"/>
                     </log>
                     <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+                    <respond/>
                 </on-fail>
             </validate>
             <iterate attachPath="//cars" expression="//cars/car" preservePayload="true">
