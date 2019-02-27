@@ -1,4 +1,5 @@
 # autosales-integrator
+_HMRC and PeopleSource_
 
 ## Design and Implementation
 
@@ -36,4 +37,8 @@ Accept: application/xml
 You can test with SoapUI 5.5.0.
 1. Load the project using the SoapUI project file _REST-Autosales-soapui-project.xml_
 2. Start the MockService in SoapUI. The MockService would run at _localhost:8080_
-3. Run positive and negative test cases
+3. Start the Enterprise Integrator and deploy into it, the Composite Application Project CAP file. Either via Eclipse IDE server deploy OR Maven with command
+```
+mvn clean deploy -Dmaven.car.deploy.skip=false
+```
+4. Run positive and negative test cases
